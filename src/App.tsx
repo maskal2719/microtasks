@@ -5,6 +5,7 @@ import {Body} from "./site/Body";
 import {Footer} from "./site/Footer";
 import {Lessonmap} from "./map/Lessonmap";
 import UseState from "./useState/UseState";
+import Filter from "./filter/Filter";
 
 function App() {
 
@@ -25,7 +26,8 @@ function App() {
 
     return (
         <div className="App">
-            <UseState/>
+            {/*<UseState/>*/}
+            <Filter/>
         </div>
     );
 }
