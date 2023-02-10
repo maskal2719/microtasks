@@ -7,6 +7,7 @@ import {Lessonmap} from "./map/Lessonmap";
 import UseState from "./useState/UseState";
 import Filter from "./filter/Filter";
 import LessonButton from "./button/LessonButton";
+import LessonInput from "./input/LessonInput";
 
 function App() {
 
@@ -28,8 +29,9 @@ function App() {
     return (
         <div className="App">
             {/*<UseState/>*/}
-            <Filter/>
-            <LessonButton/>
+            {/*<Filter/>*/}
+            {/*<LessonButton/>*/}
+            <LessonInput/>
         </div>
     );
 }
