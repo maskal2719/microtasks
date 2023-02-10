@@ -6,6 +6,7 @@ import {Footer} from "./site/Footer";
 import {Lessonmap} from "./map/Lessonmap";
 import UseState from "./useState/UseState";
 import Filter from "./filter/Filter";
+import LessonButton from "./button/LessonButton";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <div className="App">
             {/*<UseState/>*/}
             <Filter/>
+            <LessonButton/>
         </div>
     );
 }

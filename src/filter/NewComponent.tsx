@@ -1,5 +1,6 @@
 import React from 'react';
 import {FilterType, MoneyType} from "./Filter";
+import Button from "../button/components/Button";
 
 type NewComponentPropsType = {
     money: Array<MoneyType>
@@ -22,9 +23,9 @@ const NewComponent = (props: NewComponentPropsType) => {
                         </li>
                     )
                 })}
-                <button onClick={() => props.handler('dollar')}>Dollar</button>
-                <button onClick={() => props.handler('ruble')}>Ruble</button>
-                <button onClick={() => props.handler('all')}>All</button>
+                <Button name={'dollar'} callBack={() => props.handler('dollar')}/>
+                <Button name={'ruble'} callBack={() => props.handler('ruble')}/>
+                <Button name={'all'} callBack={() => props.handler('all')}/>
             </ul>
         </div>
     );
