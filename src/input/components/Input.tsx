@@ -7,12 +7,12 @@ type InputPropsType = {
 
 const Input = (props: InputPropsType) => {
 
-    const onChangeInputHandler = (event: ChangeEvent<HTMLInputElement>) => {
-        props.setTitle(event.currentTarget.title)
+    const onChangeInputHandler1 = (event: ChangeEvent<HTMLInputElement>) => {
+        props.setTitle(event.currentTarget.value)
     }
 
     return (
-        <input value={props.title} onChange={()=> onChangeInputHandler}/>
+        <input value={props.title} onChange={onChangeInputHandler1}/>
     );
 };
 

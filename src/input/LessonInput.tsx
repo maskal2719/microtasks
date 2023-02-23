@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import Input from "./components/Input";
 import Btn from "./components/Btn";
+import FullInput from "./components/FullInput";
 
 
 type LessonInputPropsType = {
@@ -23,6 +24,7 @@ const LessonInput = () => {
         console.log(title)
         let newMessage = {message: title}
         setMessage([newMessage, ...message])
+        setTitle('')
     }
 
     return (
@@ -30,8 +32,8 @@ const LessonInput = () => {
 
             {/*<FullInput callBack={addMessage}/>*/}
 
-            <Input setTitle={setTitle} title={title}/>
-            <Btn name={'+'} callBack={()=>{}}/>
+            <Input setTitle={setTitle} title={title} />
+            <Btn name={'+'} callBack={()=>addMessage(title)}/>
 
             {message.map((m, index) => {
                 return (
